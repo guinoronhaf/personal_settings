@@ -1,4 +1,7 @@
-" Guilherme Noronha VIM Settings
+" Guilmerme Noronha VIM Settings
+
+" defines mapleader key
+let mapleader = " "
 
 " Unable compatibilitis with vi, which can cause come unexpected trouble
 set nocompatible
@@ -19,6 +22,9 @@ syntax on
 " Adds numbers to the left of each line
 set number
 
+" Adds relative number
+set relativenumber
+
 " Highlights cursor line horizontally, direct below it
 set cursorline
 
@@ -38,4 +44,32 @@ set showmatch
 set hlsearch
 
 " Defines the colorscheme
-colorscheme monokai
+" colorscheme monokai
+
+
+" ---- KEYMAPS ---- 
+"  -- visual --
+vnoremap <C-c> "+y
+vnoremap ss :s/
+
+"  -- insert --
+inoremap ( ()<left>
+inoremap { {}<left>
+inoremap [ []<left>
+inoremap !main public static void main(String[] args) {}<left>
+inoremap syso System.out.println()<left>
+
+"  -- normal --
+nnoremap ç $a
+nnoremap <C-t> :vsp<CR>:wincmd l<CR>
+nnoremap <C-l> :wincmd l<CR>
+nnoremap <C-h> :wincmd h<CR>
+nnoremap <C-j> :wincmd j<CR>
+nnoremap <C-k> :wincmd k<CR>
+nnoremap <leader>h :nohlsearch<CR>
+nnoremap vg :normal!ggVG<CR>
+nnoremap D 0D
+nnoremap <leader>; :sp<CR> :wincmd j<CR> :term<CR> <C-\><C-n> :wincmd j<CR> :q<CR>
+
+"  -- terminal --
+tnoremap <Esc> <C-\><C-n>
