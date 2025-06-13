@@ -3,6 +3,8 @@
 " defines mapleader key
 let mapleader = " "
 
+set shell=/usr/bin/zsh
+
 " Unable compatibilitis with vi, which can cause come unexpected trouble
 set nocompatible
 
@@ -69,7 +71,6 @@ nnoremap <C-k> :wincmd k<CR>
 nnoremap <leader>h :nohlsearch<CR>
 nnoremap vg :normal!ggVG<CR>
 nnoremap D 0D
-nnoremap <leader>; :sp<CR> :wincmd j<CR> :term<CR> <C-\><C-n> :wincmd j<CR> :q<CR>
-
+nnoremap <leader>; <Cmd>set splitbelow<CR>:terminal<CR><C-\><C-n>:resize -5<CR>
 "  -- terminal --
 tnoremap <Esc> <C-\><C-n>
