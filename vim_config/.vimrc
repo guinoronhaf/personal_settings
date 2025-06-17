@@ -60,6 +60,7 @@ inoremap { {}<left>
 inoremap [ []<left>
 inoremap !main public static void main(String[] args) {}<left>
 inoremap syso System.out.println()<left>
+inoremap !b #!/bin/bash
 
 "  -- normal --
 nnoremap ç $a
@@ -72,5 +73,6 @@ nnoremap <leader>h :nohlsearch<CR>
 nnoremap vg :normal!ggVG<CR>
 nnoremap D 0D
 nnoremap <leader>; <Cmd>set splitbelow<CR>:terminal<CR><C-\><C-n>:resize -5<CR>
+
 "  -- terminal --
 tnoremap <Esc> <C-\><C-n>
