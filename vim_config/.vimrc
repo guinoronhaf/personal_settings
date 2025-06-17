@@ -74,3 +74,5 @@ nnoremap D 0D
 nnoremap <leader>; <Cmd>set splitbelow<CR>:terminal<CR><C-\><C-n>:resize -5<CR>
 "  -- terminal --
 tnoremap <Esc> <C-\><C-n>
+
+opa
