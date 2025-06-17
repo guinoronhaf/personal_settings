@@ -60,7 +60,6 @@ inoremap { {}<left>
 inoremap [ []<left>
 inoremap !main public static void main(String[] args) {}<left>
 inoremap syso System.out.println()<left>
-inoremap !b #!/bin/bash
 
 "  -- normal --
 nnoremap ç $a
