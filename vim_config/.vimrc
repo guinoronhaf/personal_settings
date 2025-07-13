@@ -1,3 +1,4 @@
+" Guilherme Noronha VIM Settings
 
 " defines mapleader key
 let mapleader = " "
