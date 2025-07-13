@@ -73,6 +73,10 @@ nnoremap <leader>h :nohlsearch<CR>
 nnoremap vg :normal!ggVG<CR>
 nnoremap D 0D
 nnoremap <leader>; <Cmd>set splitbelow<CR>:terminal<CR><C-\><C-n>:resize -5<CR>
+nnoremap <C-Down> <Cmd>resize -1<CR>
+nnoremap <C-Up> <Cmd>resize +1<CR>
+nnoremap <C-Right> <Cmd>vertical resize -1<CR>
+nnoremap <C-Left> <Cmd>vertical resize +1<CR>
 
 "  -- terminal --
 tnoremap <Esc> <C-\><C-n>
