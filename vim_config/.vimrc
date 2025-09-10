@@ -28,7 +28,7 @@ set number
 set relativenumber
 
 " Highlights cursor line horizontally, direct below it
-set cursorline
+" set cursorline
 
 " Set the indent ti 4 spaces
 set shiftwidth=4
