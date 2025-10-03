@@ -53,6 +53,7 @@ set hlsearch
 "  -- visual --
 vnoremap <C-c> "+y
 vnoremap ss :s/
+vnoremap <leader>s y:%s/<C-r>"/
 
 "  -- insert --
 inoremap ( ()<left>
